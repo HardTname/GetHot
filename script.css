@@ -1,0 +1,81 @@
+/* 引入 Google 字体 */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* 订阅卡片 */
+.container {
+    background: white;
+    padding: 2rem;
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* 标题 */
+h1 {
+    font-size: 24px;
+    color: #2C3E50;
+    margin-bottom: 1rem;
+}
+
+/* 文本 */
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+/* 输入框 */
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+}
+
+input[type="email"]:focus {
+    border-color: #4CAF50;
+}
+
+/* 按钮 */
+button {
+    width: 100%;
+    background: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #388E3C;
+}
+
+/* 响应式适配 */
+@media (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+}
